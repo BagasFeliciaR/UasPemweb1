@@ -1,0 +1,350 @@
+/* login page */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*=============== body ===============*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+  }
+
+
+  
+body{
+    background: url("/img/bg-01.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 20px;
+  }
+  
+  /*=============== form ===============*/
+  .form-container {
+    display: flex;
+    width: 900px;
+    height: 500px;
+    border: 3px solid rgba(248, 248, 248, 0.3);
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    /*overflow: hidden;*/
+  }
+  
+  .col-1 {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 55%;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(30px);
+    border-radius: 0 30% 20% 0;
+    transition: border-radius .3s;
+  }
+  
+  .image-layer {
+    position: relative;
+  }
+  
+  .form-image-main {
+    width: 400px;
+  }
+  
+  .form-image {
+    position: absolute;
+    left: 0;
+    width: 400px;
+  }
+  
+  .form-image.dots1 {
+    position: absolute;
+    width: 30px;
+    left: 60px;
+    bottom: 180px;
+  }
+  
+  .form-image.dots2 {
+    position: absolute;
+    width: 30px;
+    left: 260px;
+    top: 310px;
+  }
+  
+  .form-image.dots4 {
+    position: absolute;
+    width: 30px;
+    top: 90px;
+    left: 9px;
+    bottom: 240px;
+  }
+  
+  .form-image.dots5 {
+    position: absolute;
+    width: 30px;
+    top: 290px;
+    left: 67px;
+    bottom: 240px;
+  }
+  
+  .form-image.dots6 {
+    position: absolute;
+    width: 60px;
+    top: 280px;
+    left: 190px;
+    bottom: 240px;
+    rotate: 54deg;
+  }
+  
+  .form-image.dots7 {
+    position: absolute;
+    width: 30px;
+    top: 230px;
+    left: 80px;
+    
+  }
+  
+  .form-image.dots8 {
+    position: absolute;
+    width: 30px;
+    top: 236px;
+    left: 230px;
+  }
+  
+  .form-image.dots9 {
+    position: absolute;
+    width: 70px;
+    top: 182px;
+    left: 10px;
+  }
+  
+  .form-image.dots10 {
+    position: absolute;
+    width: 70px;
+    top: 110px;
+    left: 40px;
+  }
+  
+  .form-image.dots11 {
+    position: absolute;
+    width: 80px;
+    top: 110px;
+    left: 320px;
+  }
+  
+  .form-image.dots12 {
+    position: absolute;
+    width: 80px;
+    top: 190px;
+    left: 350px;
+  }
+  
+  .form-image.dots13 {
+    position: absolute;
+    width: 70px;
+    top: 12px;
+    left: 360px;
+    rotate: 32deg;
+  }
+  
+  .form-image.dots14 {
+    position: absolute;
+    width: 40px;
+    bottom: 290px;
+    left: 140px;
+    rotate: 32deg;
+  }
+  
+  /*second col*/
+  .col-2 {
+    position: relative;
+    width: 65%;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  .btn-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    font-weight: 500;
+    padding: 5px 30px;
+    border: none;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: .2s;
+  }
+  
+  .btn-1 {
+    background: #21264d;
+  }
+  
+  .btn:hover {
+    opacity: 0.85;
+  }
+
+  .back {
+    font-weight: 500;
+    padding: 5px 30px;
+    border: none;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: .2s;
+  }
+
+  .back {
+    background: #21264d;
+  }
+  
+  .back:hover {
+    opacity: 0.85;
+  }
+  
+  .login-form {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 4vw;
+    transition: .3s;
+  }
+  
+  .register-form {
+    position: absolute;
+    transform: translateX(50%);
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 4vw;
+    transition: .3s;
+
+  }
+  
+  .register-form .form-title {
+    margin: block;
+  }
+  
+  .form-title {
+    margin: 13px 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .form-input {
+    width: 100%;
+  }
+  
+  .input-box {
+    position: relative;
+  }
+  
+  .input-field {
+    width: 100%;
+    height: 55px;
+    padding: 0 15px;
+    margin: 7px 0;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  ::placeholder {
+    color: #fff;
+    font-size: 15px;
+  }
+  
+  .input-box .icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #fff;
+  }
+  
+  .forgot-pass {
+    display: flex;
+    justify-content: right;
+    gap: 5px;
+  }
+  
+  .forgot-pass a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .forgot-pass a:hover {
+    text-decoration: underline;
+  }
+  
+  .input-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 55px;
+    padding: 0 15px;
+    margin: 10px 0;
+    color: #fff;
+    background: #21264d;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  .input-submit:hover {
+    gap: 15px;
+  }
+  
+  .sosial-login {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+  }
+  
+  .sosial-login i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: .2s;
+  }
+
+  .sosial-login i:hover {
+    transform: scale(0.9);
+  }
+  
